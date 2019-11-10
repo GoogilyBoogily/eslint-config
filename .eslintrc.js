@@ -11,9 +11,6 @@ module.exports = {
     'es6': true
   },
   'extends': 'eslint:recommended',
-  'plugins': [
-    'import'
-  ],
   'rules': {
     'indent': [
       'error',
@@ -49,7 +46,6 @@ module.exports = {
       'error',
       'always'
     ],
-    'camelcase': 'error',
     'comma-dangle': 'error',
     'no-floating-decimal': 'error',
     'no-useless-return': 'error',
@@ -57,21 +53,6 @@ module.exports = {
     'brace-style': [
       'error',
       '1tbs'
-    ],
-    'no-use-before-define': [
-      'error',
-      {
-        'classes': true,
-        'functions': true,
-        'variables': true
-      }
-    ],
-    'func-style': [
-      'error',
-      'declaration',
-      {
-        'allowArrowFunctions': true
-      }
     ],
     'padding-line-between-statements': [
       'error',
@@ -152,66 +133,6 @@ module.exports = {
         'blankLine': 'always',
         'prev': '*',
         'next': 'block-like'
-      }
-    ],
-    'keyword-spacing': [
-      'error',
-      {
-        'before': true,
-        'after': true
-      }
-    ],
-    'space-before-blocks': 2,
-    'padded-blocks': [
-      'error',
-      'never'
-    ],
-    'lines-between-class-members': [
-      'error',
-      'always'
-    ],
-    'no-multiple-empty-lines': [
-      'error',
-      {
-        'max': 1,
-        'maxEOF': 1,
-        'maxBOF': 1
-      }
-    ],
-    'require-await': 'error',
-    'key-spacing': [
-      'error', {
-        'beforeColon': false,
-        'afterColon': true,
-        'mode': 'strict'
-      }
-    ],
-    'space-unary-ops': [
-      'error',
-      {
-        'words': true,
-        'nonwords': false
-      }
-    ],
-    'space-infix-ops': 'error',
-    'prefer-template': 'error',
-    'no-unneeded-ternary': 'error',
-    'import/order': [
-      'error',
-      {
-        'groups': [
-          [
-            'builtin',
-            'external'
-          ],
-          [
-            'internal',
-            'sibling',
-            'parent',
-            'index'
-          ]
-        ],
-        'newlines-between': 'always'
       }
     ]
   }
